@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Food Detail Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FoodDetailController" customModule="FoodManagement2024" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ten mon an" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="egX-cT-aE1">
+                                <rect key="frame" x="20" y="79" width="353" height="40"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="acl-mJ-sds">
+                                <rect key="frame" x="20" y="139" width="353" height="353"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="acl-mJ-sds" secondAttribute="height" multiplier="1:1" id="3zC-2C-qLO"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eHN-kN-ye7" appends="YES" id="6ch-tE-ejk"/>
+                                </connections>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GzK-hK-cfk" customClass="UIRating" customModule="FoodManagement2024" customModuleProvider="target">
+                                <rect key="frame" x="40" y="512" width="313" height="54.666666666666629"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GzK-hK-cfk" secondAttribute="height" multiplier="63:11" id="Cto-6Y-O2Z"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starAmount">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GzK-hK-cfk" secondAttribute="trailing" constant="40" id="5J2-5d-6z7"/>
+                            <constraint firstItem="egX-cT-aE1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5kH-xJ-d9f"/>
+                            <constraint firstItem="acl-mJ-sds" firstAttribute="top" secondItem="egX-cT-aE1" secondAttribute="bottom" constant="20" id="8fz-2j-BoM"/>
+                            <constraint firstItem="GzK-hK-cfk" firstAttribute="top" secondItem="acl-mJ-sds" secondAttribute="bottom" constant="20" id="Cnw-eN-x77"/>
+                            <constraint firstItem="egX-cT-aE1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="QjX-Yo-MPJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="egX-cT-aE1" secondAttribute="trailing" constant="20" id="Ubd-7d-05m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="acl-mJ-sds" secondAttribute="trailing" constant="20" id="fLk-0l-U1q"/>
+                            <constraint firstItem="GzK-hK-cfk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="mX1-M1-0R2"/>
+                            <constraint firstItem="acl-mJ-sds" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uJF-sL-lG2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="foodImage" destination="acl-mJ-sds" id="QmB-d0-oHC"/>
+                        <outlet property="foodName" destination="egX-cT-aE1" id="Bmo-DG-but"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="eHN-kN-ye7">
+                    <connections>
+                        <action selector="ImagePicker:" destination="BYZ-38-t0r" id="Lst-X7-6Q9"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="85" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="default" width="216.66667175292969" height="145"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
