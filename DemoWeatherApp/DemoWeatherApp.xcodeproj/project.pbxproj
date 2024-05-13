@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		047BD8202BF1DFF40007C408 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BD81F2BF1DFF40007C408 /* CalendarViewController.swift */; };
+		047BD8222BF1E0B90007C408 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BD8212BF1E0B90007C408 /* HomeController.swift */; };
 		CE644B892BD355F40041EB04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE644B882BD355F40041EB04 /* AppDelegate.swift */; };
 		CE644B8B2BD355F40041EB04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE644B8A2BD355F40041EB04 /* SceneDelegate.swift */; };
 		CE644B8D2BD355F40041EB04 /* WeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE644B8C2BD355F40041EB04 /* WeatherController.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		047BD81F2BF1DFF40007C408 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		047BD8212BF1E0B90007C408 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		CE644B852BD355F40041EB04 /* DemoWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE644B882BD355F40041EB04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE644B8A2BD355F40041EB04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 			children = (
 				CE644B8C2BD355F40041EB04 /* WeatherController.swift */,
 				CEC20EF22BEF16D600CEAF26 /* CalendarController.swift */,
+				047BD8212BF1E0B90007C408 /* HomeController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 			children = (
 				CEC20EEE2BEF095400CEAF26 /* CalendarCollectionViewCell.swift */,
 				CEC20EF42BEF170700CEAF26 /* CalendarView.swift */,
+				047BD81F2BF1DFF40007C408 /* CalendarViewController.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -294,10 +300,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047BD8202BF1DFF40007C408 /* CalendarViewController.swift in Sources */,
 				CEC20EEF2BEF095400CEAF26 /* CalendarCollectionViewCell.swift in Sources */,
 				CEC20EF52BEF170700CEAF26 /* CalendarView.swift in Sources */,
 				CEC20EF32BEF16D600CEAF26 /* CalendarController.swift in Sources */,
 				CE644B8D2BD355F40041EB04 /* WeatherController.swift in Sources */,
+				047BD8222BF1E0B90007C408 /* HomeController.swift in Sources */,
 				CE644B932BD355F40041EB04 /* DemoWeatherApp.xcdatamodeld in Sources */,
 				CE644B892BD355F40041EB04 /* AppDelegate.swift in Sources */,
 				CE644B8B2BD355F40041EB04 /* SceneDelegate.swift in Sources */,

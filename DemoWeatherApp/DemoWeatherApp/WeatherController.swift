@@ -10,7 +10,11 @@ import UIKit
 class WeatherController: UIViewController {
     //MARK: FIELDS
     
-    private var month = Date();
+    
+    @IBAction func endView(_ sender: UIBarButtonItem) {
+        dismiss(animated: true);
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,4 +23,3 @@ class WeatherController: UIViewController {
 
 
 }
-
