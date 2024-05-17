@@ -11,44 +11,28 @@ private let reuseIdentifier = "Cell"
 
 class CalendarController: UICollectionViewController {
     //MARK: FIELDS
-    private var calendar = Calendar.current;
-    private var currentDay = 1;
-    private var currentMonth = 1;
-    private var currentYear = 2000;
+    
     
     
     @IBOutlet weak var lblCurrentDate: UILabel!
     
     @IBAction func goPrevMonth(_ sender: UIButton) {
-        currentMonth -= 1;
-        if currentMonth <= 0 {
-            currentMonth = 12;
-            currentYear -= 1;
-        }
+        
     }
     
     @IBAction func doNextMonth(_ sender: UIButton) {
-        currentMonth += 1;
         
-        if currentMonth >= 13 {
-            currentMonth = 1;
-            currentYear += 1;
-        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        currentDay = calendar.component(.day, from: Date());
-        currentMonth = calendar.component(.month, from: Date());
-        currentYear = calendar.component(.year, from: Date());
         
-        updateCalendar();
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+//        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }
@@ -115,9 +99,5 @@ class CalendarController: UICollectionViewController {
     }
     */
     
-    //MARK: METHODS
-    private func updateCalendar() {
-        print("current \(currentMonth)")
-    }
-
+    
 }
