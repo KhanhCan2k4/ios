@@ -20,6 +20,13 @@
 		B67BAAF32BD3A30C00240264 /* FoodManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67BAAF22BD3A30C00240264 /* FoodManagementTests.swift */; };
 		B67BAAFD2BD3A30C00240264 /* FoodManagementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67BAAFC2BD3A30C00240264 /* FoodManagementUITests.swift */; };
 		B67BAAFF2BD3A30C00240264 /* FoodManagementUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67BAAFE2BD3A30C00240264 /* FoodManagementUITestsLaunchTests.swift */; };
+		CE928EF62BF839D3008905AB /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE928EF52BF839D3008905AB /* libsqlite3.0.tbd */; };
+		CE928F072BF83C2C008905AB /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CE928EFE2BF83C2C008905AB /* FMDatabasePool.m */; };
+		CE928F082BF83C2C008905AB /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CE928EFF2BF83C2C008905AB /* FMResultSet.m */; };
+		CE928F092BF83C2C008905AB /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CE928F032BF83C2C008905AB /* FMDatabaseQueue.m */; };
+		CE928F0A2BF83C2C008905AB /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE928F042BF83C2C008905AB /* FMDatabaseAdditions.m */; };
+		CE928F0B2BF83C2C008905AB /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CE928F062BF83C2C008905AB /* FMDatabase.m */; };
+		CE928F0D2BF845F3008905AB /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE928F0C2BF845F3008905AB /* Database.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +64,20 @@
 		B67BAAF82BD3A30C00240264 /* FoodManagementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodManagementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B67BAAFC2BD3A30C00240264 /* FoodManagementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodManagementUITests.swift; sourceTree = "<group>"; };
 		B67BAAFE2BD3A30C00240264 /* FoodManagementUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodManagementUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE928EF52BF839D3008905AB /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		CE928EFB2BF83C2B008905AB /* FoodManagement-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodManagement-Bridging-Header.h"; sourceTree = "<group>"; };
+		CE928EFC2BF83C2C008905AB /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = FoodManagement/FMDB/src/FMDatabaseAdditions.h; sourceTree = SOURCE_ROOT; };
+		CE928EFD2BF83C2C008905AB /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = FoodManagement/FMDB/src/FMResultSet.h; sourceTree = SOURCE_ROOT; };
+		CE928EFE2BF83C2C008905AB /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = FoodManagement/FMDB/src/FMDatabasePool.m; sourceTree = SOURCE_ROOT; };
+		CE928EFF2BF83C2C008905AB /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = FoodManagement/FMDB/src/FMResultSet.m; sourceTree = SOURCE_ROOT; };
+		CE928F002BF83C2C008905AB /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = FoodManagement/FMDB/src/FMDatabasePool.h; sourceTree = SOURCE_ROOT; };
+		CE928F012BF83C2C008905AB /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = FoodManagement/FMDB/src/FMDatabase.h; sourceTree = SOURCE_ROOT; };
+		CE928F022BF83C2C008905AB /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = FoodManagement/FMDB/src/FMDB.h; sourceTree = SOURCE_ROOT; };
+		CE928F032BF83C2C008905AB /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = FoodManagement/FMDB/src/FMDatabaseQueue.m; sourceTree = SOURCE_ROOT; };
+		CE928F042BF83C2C008905AB /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = FoodManagement/FMDB/src/FMDatabaseAdditions.m; sourceTree = SOURCE_ROOT; };
+		CE928F052BF83C2C008905AB /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = FoodManagement/FMDB/src/FMDatabaseQueue.h; sourceTree = SOURCE_ROOT; };
+		CE928F062BF83C2C008905AB /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = FoodManagement/FMDB/src/FMDatabase.m; sourceTree = SOURCE_ROOT; };
+		CE928F0C2BF845F3008905AB /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE928EF62BF839D3008905AB /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +130,7 @@
 				B67BAAF12BD3A30C00240264 /* FoodManagementTests */,
 				B67BAAFB2BD3A30C00240264 /* FoodManagementUITests */,
 				B67BAAD92BD3A30A00240264 /* Products */,
+				CE928EF42BF839D3008905AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +147,7 @@
 		B67BAADA2BD3A30A00240264 /* FoodManagement */ = {
 			isa = PBXGroup;
 			children = (
+				CE928EF72BF83A01008905AB /* FMDB */,
 				B67BAB0C2BD3A33400240264 /* Controllers */,
 				B67BAAE12BD3A30A00240264 /* Main.storyboard */,
 				B65C14DE2BE638740092486D /* Models */,
@@ -169,6 +193,58 @@
 				B65C14D92BE61D060092486D /* MealTableViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CE928EF42BF839D3008905AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE928EF52BF839D3008905AB /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE928EF72BF83A01008905AB /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				CE928EFA2BF83BC7008905AB /* framework */,
+				CE928EF92BF83B03008905AB /* DAL */,
+				CE928EF82BF83A27008905AB /* src */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		CE928EF82BF83A27008905AB /* src */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		CE928EF92BF83B03008905AB /* DAL */ = {
+			isa = PBXGroup;
+			children = (
+				CE928F0C2BF845F3008905AB /* Database.swift */,
+			);
+			path = DAL;
+			sourceTree = "<group>";
+		};
+		CE928EFA2BF83BC7008905AB /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				CE928F012BF83C2C008905AB /* FMDatabase.h */,
+				CE928F062BF83C2C008905AB /* FMDatabase.m */,
+				CE928EFC2BF83C2C008905AB /* FMDatabaseAdditions.h */,
+				CE928F042BF83C2C008905AB /* FMDatabaseAdditions.m */,
+				CE928F002BF83C2C008905AB /* FMDatabasePool.h */,
+				CE928EFE2BF83C2C008905AB /* FMDatabasePool.m */,
+				CE928F052BF83C2C008905AB /* FMDatabaseQueue.h */,
+				CE928F032BF83C2C008905AB /* FMDatabaseQueue.m */,
+				CE928F022BF83C2C008905AB /* FMDB.h */,
+				CE928EFD2BF83C2C008905AB /* FMResultSet.h */,
+				CE928EFF2BF83C2C008905AB /* FMResultSet.m */,
+				CE928EFB2BF83C2B008905AB /* FoodManagement-Bridging-Header.h */,
+			);
+			path = framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +315,7 @@
 				TargetAttributes = {
 					B67BAAD72BD3A30900240264 = {
 						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1420;
 					};
 					B67BAAED2BD3A30C00240264 = {
 						CreatedOnToolsVersion = 15.3;
@@ -305,9 +382,15 @@
 				B65C14DC2BE621160092486D /* MealCell.swift in Sources */,
 				B67BAAE02BD3A30A00240264 /* MealDetailController.swift in Sources */,
 				B65C14E02BE6389E0092486D /* Meal.swift in Sources */,
+				CE928F0B2BF83C2C008905AB /* FMDatabase.m in Sources */,
 				B6517EA62BDCE4F1004EDBF6 /* UIRating.swift in Sources */,
 				B67BAADC2BD3A30A00240264 /* AppDelegate.swift in Sources */,
+				CE928F092BF83C2C008905AB /* FMDatabaseQueue.m in Sources */,
+				CE928F072BF83C2C008905AB /* FMDatabasePool.m in Sources */,
+				CE928F0A2BF83C2C008905AB /* FMDatabaseAdditions.m in Sources */,
+				CE928F082BF83C2C008905AB /* FMResultSet.m in Sources */,
 				B65C14DD2BE630F60092486D /* MealTableViewController.swift in Sources */,
+				CE928F0D2BF845F3008905AB /* Database.swift in Sources */,
 				B67BAADE2BD3A30A00240264 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +571,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -496,6 +580,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,6 +589,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tdc.edu.vn.FoodManagement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodManagement/FMDB/framework/FoodManagement-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -514,6 +601,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -522,6 +610,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -530,6 +619,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tdc.edu.vn.FoodManagement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodManagement/FMDB/framework/FoodManagement-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

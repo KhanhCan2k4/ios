@@ -10,7 +10,7 @@ import UIKit
 class MealTableViewController: UITableViewController {
     
     // MARK: Properties
-    
+    private let databse = Database();
     private var meals = [Meal]()
     @IBOutlet weak var navigation: UINavigationItem!
     private let mealDetailStoryboardID = "MealDetail"
@@ -91,21 +91,37 @@ class MealTableViewController: UITableViewController {
             cell.rating.rating = meal.rating
             
             
-             // Bổ sung cho bắt sự kiện cho cell cách 1
-             if cell.onTap == nil {
-             // Khởi tạo đối tượng onTap
-             cell.onTap = UITapGestureRecognizer()
-             // Bắt sự kiện cho đối tượng onTap
-             cell.onTap!.addTarget(self, action: #selector(editMeal))
-             // Kết nối đối tượng onTap vào cell
-             cell.addGestureRecognizer(cell.onTap!)
-             }
+//             // Bổ sung cho bắt sự kiện cho cell cách 1
+//             if cell.onTap == nil {
+//             // Khởi tạo đối tượng onTap
+//             cell.onTap = UITapGestureRecognizer()
+//             // Bắt sự kiện cho đối tượng onTap
+//             cell.onTap!.addTarget(self, action: #selector(editMeal))
+//             // Kết nối đối tượng onTap vào cell
+//             cell.addGestureRecognizer(cell.onTap!)
+//             }
              
             return cell
         }
         
         // Lỗi nghiêm trọng => dùng fatalError
         fatalError("Không thể tạo Cell!")
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("cell tab");
+        if let editController = self.storyboard!.instantiateViewController(withIdentifier: mealDetailStoryboardID) as? MealDetailController {
+            editController.newMeal = meals[indexPath.row]
+            
+            // Đánh đấu đường đi
+            navigationType = .editMeal
+            
+            // Lưu vị trí của meal
+            selectedIndexPath = indexPath
+            // Hiển thị màn hình MealDetailController
+            present(editController, animated: true)
+        }
+        
     }
     
     @objc private func editMeal(_ sender:UITapGestureRecognizer) {
@@ -203,6 +219,10 @@ class MealTableViewController: UITableViewController {
                 // 2.2. Thêm dòng mới vào tableView
                 let newIndexPath = IndexPath(row: meals.count - 1, section: 0)
                 tableView.insertRows(at: [newIndexPath], with: .left)
+                
+                //store into database
+                let _ = databse.store(meal: meal);
+                
                 break
             case .editMeal:
                 // Update meal trong tableView

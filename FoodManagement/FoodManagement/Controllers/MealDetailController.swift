@@ -47,6 +47,7 @@ class MealDetailController: UIViewController, UITextFieldDelegate, UIImagePicker
     // Goi lap tuc sau khi an ban phim
     func textFieldDidEndEditing(_ textField: UITextField) {
         print("Ten mon an: \(mealName.text!)")
+        navigation.title = mealName.text!
     }
     
     // MARK: Dinh nghia cac ham uy quyen cho doi tuong imagePicker
