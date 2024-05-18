@@ -19,6 +19,12 @@
 		CE644BA32BD355F50041EB04 /* DemoWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE644BA22BD355F50041EB04 /* DemoWeatherAppTests.swift */; };
 		CE644BAD2BD355F50041EB04 /* DemoWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE644BAC2BD355F50041EB04 /* DemoWeatherAppUITests.swift */; };
 		CE644BAF2BD355F50041EB04 /* DemoWeatherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE644BAE2BD355F50041EB04 /* DemoWeatherAppUITestsLaunchTests.swift */; };
+		CE7FFEDD2BF835F500980A6C /* HourWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FFEDC2BF835F500980A6C /* HourWeatherCell.swift */; };
+		CE7FFEDF2BF8367400980A6C /* HourWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FFEDE2BF8367400980A6C /* HourWeatherView.swift */; };
+		CE7FFEE52BF859F500980A6C /* AttributeWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FFEE42BF859F500980A6C /* AttributeWeatherView.swift */; };
+		CE7FFEE72BF85A2300980A6C /* AttributeWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FFEE62BF85A2300980A6C /* AttributeWeatherCell.swift */; };
+		CE7FFEE92BF85A4500980A6C /* DayWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FFEE82BF85A4500980A6C /* DayWeatherCell.swift */; };
+		CE7FFEEB2BF85A6D00980A6C /* DayWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FFEEA2BF85A6D00980A6C /* DayWeatherView.swift */; };
 		CEC20EEF2BEF095400CEAF26 /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC20EEE2BEF095400CEAF26 /* CalendarCollectionViewCell.swift */; };
 		CEC20EF32BEF16D600CEAF26 /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC20EF22BEF16D600CEAF26 /* CalendarController.swift */; };
 		CEC20EF52BEF170700CEAF26 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC20EF42BEF170700CEAF26 /* CalendarView.swift */; };
@@ -58,6 +64,12 @@
 		CE644BA82BD355F50041EB04 /* DemoWeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoWeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE644BAC2BD355F50041EB04 /* DemoWeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoWeatherAppUITests.swift; sourceTree = "<group>"; };
 		CE644BAE2BD355F50041EB04 /* DemoWeatherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoWeatherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE7FFEDC2BF835F500980A6C /* HourWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourWeatherCell.swift; sourceTree = "<group>"; };
+		CE7FFEDE2BF8367400980A6C /* HourWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourWeatherView.swift; sourceTree = "<group>"; };
+		CE7FFEE42BF859F500980A6C /* AttributeWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeWeatherView.swift; sourceTree = "<group>"; };
+		CE7FFEE62BF85A2300980A6C /* AttributeWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeWeatherCell.swift; sourceTree = "<group>"; };
+		CE7FFEE82BF85A4500980A6C /* DayWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeatherCell.swift; sourceTree = "<group>"; };
+		CE7FFEEA2BF85A6D00980A6C /* DayWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeatherView.swift; sourceTree = "<group>"; };
 		CEC20EEE2BEF095400CEAF26 /* CalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCell.swift; sourceTree = "<group>"; };
 		CEC20EF22BEF16D600CEAF26 /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
 		CEC20EF42BEF170700CEAF26 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -159,12 +171,50 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		CEC20EEB2BEF090C00CEAF26 /* Controls */ = {
+		CE7FFEE02BF8558F00980A6C /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
 				CEC20EEE2BEF095400CEAF26 /* CalendarCollectionViewCell.swift */,
 				CEC20EF42BEF170700CEAF26 /* CalendarView.swift */,
 				047BD81F2BF1DFF40007C408 /* CalendarViewController.swift */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
+		CE7FFEE12BF855AC00980A6C /* HourWeather */ = {
+			isa = PBXGroup;
+			children = (
+				CE7FFEDC2BF835F500980A6C /* HourWeatherCell.swift */,
+				CE7FFEDE2BF8367400980A6C /* HourWeatherView.swift */,
+			);
+			name = HourWeather;
+			sourceTree = "<group>";
+		};
+		CE7FFEE22BF855CB00980A6C /* DayWeather */ = {
+			isa = PBXGroup;
+			children = (
+				CE7FFEE82BF85A4500980A6C /* DayWeatherCell.swift */,
+				CE7FFEEA2BF85A6D00980A6C /* DayWeatherView.swift */,
+			);
+			name = DayWeather;
+			sourceTree = "<group>";
+		};
+		CE7FFEE32BF855EC00980A6C /* AttributeWeather */ = {
+			isa = PBXGroup;
+			children = (
+				CE7FFEE42BF859F500980A6C /* AttributeWeatherView.swift */,
+				CE7FFEE62BF85A2300980A6C /* AttributeWeatherCell.swift */,
+			);
+			name = AttributeWeather;
+			sourceTree = "<group>";
+		};
+		CEC20EEB2BEF090C00CEAF26 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				CE7FFEE32BF855EC00980A6C /* AttributeWeather */,
+				CE7FFEE22BF855CB00980A6C /* DayWeather */,
+				CE7FFEE12BF855AC00980A6C /* HourWeather */,
+				CE7FFEE02BF8558F00980A6C /* Calendar */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -303,9 +353,15 @@
 				047BD8202BF1DFF40007C408 /* CalendarViewController.swift in Sources */,
 				CEC20EEF2BEF095400CEAF26 /* CalendarCollectionViewCell.swift in Sources */,
 				CEC20EF52BEF170700CEAF26 /* CalendarView.swift in Sources */,
+				CE7FFEE72BF85A2300980A6C /* AttributeWeatherCell.swift in Sources */,
 				CEC20EF32BEF16D600CEAF26 /* CalendarController.swift in Sources */,
+				CE7FFEDF2BF8367400980A6C /* HourWeatherView.swift in Sources */,
 				CE644B8D2BD355F40041EB04 /* WeatherController.swift in Sources */,
+				CE7FFEE92BF85A4500980A6C /* DayWeatherCell.swift in Sources */,
 				047BD8222BF1E0B90007C408 /* HomeController.swift in Sources */,
+				CE7FFEDD2BF835F500980A6C /* HourWeatherCell.swift in Sources */,
+				CE7FFEEB2BF85A6D00980A6C /* DayWeatherView.swift in Sources */,
+				CE7FFEE52BF859F500980A6C /* AttributeWeatherView.swift in Sources */,
 				CE644B932BD355F40041EB04 /* DemoWeatherApp.xcdatamodeld in Sources */,
 				CE644B892BD355F40041EB04 /* AppDelegate.swift in Sources */,
 				CE644B8B2BD355F40041EB04 /* SceneDelegate.swift in Sources */,
